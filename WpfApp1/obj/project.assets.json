@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BAU_BENE\\Desktop\\COA\\WpfApp1\\WpfApp1\\food_calculation.csproj",
+      "projectUniqueName": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculation-v1.1\\WpfApp1\\food_calculation.csproj",
       "projectName": "food_calculation",
-      "projectPath": "C:\\Users\\BAU_BENE\\Desktop\\COA\\WpfApp1\\WpfApp1\\food_calculation.csproj",
+      "projectPath": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculation-v1.1\\WpfApp1\\food_calculation.csproj",
       "packagesPath": "C:\\Users\\BAU_BENE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BAU_BENE\\Desktop\\COA\\WpfApp1\\WpfApp1\\obj\\",
+      "outputPath": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculation-v1.1\\WpfApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
