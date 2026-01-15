@@ -6,7 +6,46 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="LayoutRoot" Background="#afe2f2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label 
+            Grid.Row="0"
+            Grid.Column="1"
+            FontFamily="Roboto" 
+            Content="Kalkulation" 
+            HorizontalAlignment="Center" 
+            Margin="0,30" 
+            FontSize="35" />
+        
+        <Button 
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Content="Gerichte" 
+            Padding="20" 
+
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Margin="30" />
+        
+        <Button 
+            Grid.Row="1"
+            Grid.Column="2"
+            Content="Meine Zutaten" 
+            Background="#f1a4b8"
+            Padding="20" 
+            Margin="30" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" />
+        
     </Grid>
 </Window>

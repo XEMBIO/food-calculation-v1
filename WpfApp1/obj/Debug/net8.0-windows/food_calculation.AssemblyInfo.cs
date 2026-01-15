@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("food_calculation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4082de4081c581b14c10bd3ee8ffdba58b2a21ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85c458639d37276116478f086d91ed40113a2000")]
 [assembly: System.Reflection.AssemblyProductAttribute("food_calculation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("food_calculation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
