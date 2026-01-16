@@ -36,7 +36,8 @@
             Background="#a3a3f0"
             HorizontalAlignment="Stretch" 
             VerticalAlignment="Stretch" 
-            Margin="30" />
+            Margin="30" Click="Button_Click" />
+        
         
         <Button 
             Grid.Row="1"
@@ -48,6 +49,12 @@
             Margin="30" 
             HorizontalAlignment="Stretch" 
             VerticalAlignment="Stretch" />
-        
+
+        <Frame
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="3"
+            x:Name="MainFrame"
+            NavigationUIVisibility="Hidden"/>
+
     </Grid>
 </Window>

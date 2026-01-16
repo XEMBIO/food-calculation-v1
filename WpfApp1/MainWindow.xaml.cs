@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using food_calculation;
 
 namespace WpfApp1
 {
@@ -22,9 +23,9 @@ namespace WpfApp1
         
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            MainFrame.Navigate(new Page1());
         }
     }
 }
