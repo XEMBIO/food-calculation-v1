@@ -22,9 +22,15 @@ namespace food_calculation
     /// </summary>
     public partial class Page1 : Page
     {
+        private DishManager dishManager;
         public Page1()
         {
             InitializeComponent();
+
+            dishManager = new DishManager();
+
+            dishManager.RefreshDishes(this);
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -43,6 +49,26 @@ namespace food_calculation
 
         }
 
-        
+        private void RefreshMenu(object sender, RoutedEventArgs e)
+        {
+            dishManager.RefreshDishes(this);
+        }
+
+        public void AddDish(string name)
+        {
+            Button btn = new Button
+            {
+                Content = name,
+                FontSize = 25
+            };
+            GerichtScroll.Children.Add(btn);
+        }
+
+        public void ClearDishes()
+        {
+            GerichtScroll.Children.Clear();
+        }
+
+
     }
 }

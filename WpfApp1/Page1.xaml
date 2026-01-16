@@ -40,5 +40,29 @@
             FontSize="20"
             BorderThickness="4" Click="Button_Click"/>
 
+        <Button
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="20"
+            Background="#aaaaff"
+            Content="Refresh"
+            FontSize="20"
+            Click="RefreshMenu"/>
+
+
+        <ScrollViewer 
+            VerticalScrollBarVisibility="Visible"
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Margin="30"
+            Background="AliceBlue"
+            x:Name="GerichtMenu">
+            
+            <StackPanel x:Name="GerichtScroll">
+           
+            </StackPanel>
+
+        </ScrollViewer>
+
     </Grid>
 </Page>

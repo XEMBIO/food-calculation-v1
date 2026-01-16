@@ -17,6 +17,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Page1 GerichtMenu = new Page1();
         public MainWindow()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new Page1());
+            MainFrame.Navigate(GerichtMenu);
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)
