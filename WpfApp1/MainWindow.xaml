@@ -48,7 +48,8 @@
             Padding="20" 
             Margin="30" 
             HorizontalAlignment="Stretch" 
-            VerticalAlignment="Stretch" />
+            VerticalAlignment="Stretch"
+            Click="Button_Click2"/>
 
         <Frame
             Grid.RowSpan="2"

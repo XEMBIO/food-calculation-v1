@@ -27,5 +27,10 @@ namespace WpfApp1
         {
             MainFrame.Navigate(new Page1());
         }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new MyIngredients());
+        }
     }
 }

@@ -12,17 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using food_calculation;
-using WpfApp1;
 
 namespace food_calculation
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for MyIngredients.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class MyIngredients : Page
     {
-        public Page1()
+        public MyIngredients()
         {
             InitializeComponent();
         }
@@ -38,11 +36,7 @@ namespace food_calculation
                 {
                     mainFrame.Content = null;
                 }
-                
             }
-
         }
-
-        
     }
 }

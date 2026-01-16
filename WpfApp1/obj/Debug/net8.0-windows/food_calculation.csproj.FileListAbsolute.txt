@@ -41,3 +41,5 @@ C:\Users\BAU_BENE\source\repos\food-calculation-v1.1\WpfApp1\obj\Debug\net8.0-wi
 C:\Users\BAU_BENE\source\repos\food-calculation-v1.1\WpfApp1\obj\Debug\net8.0-windows\ref\food_calculation.dll
 C:\Users\BAU_BENE\source\repos\food-calculation-v1.1\WpfApp1\obj\Debug\net8.0-windows\Page1.g.cs
 C:\Users\BAU_BENE\source\repos\food-calculation-v1.1\WpfApp1\obj\Debug\net8.0-windows\Page1.baml
+C:\Users\BAU_BENE\source\repos\food-calculation-v1.1\WpfApp1\obj\Debug\net8.0-windows\MyIngredients.g.cs
+C:\Users\BAU_BENE\source\repos\food-calculation-v1.1\WpfApp1\obj\Debug\net8.0-windows\MyIngredients.baml
