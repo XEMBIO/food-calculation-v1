@@ -20,9 +20,12 @@ namespace food_calculation
     /// </summary>
     public partial class IngredientPage : Page
     {
-        public IngredientPage()
+
+        Dish currDish;
+        public IngredientPage(Dish currDish)
         {
             InitializeComponent();
+            this.currDish = currDish;
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
@@ -45,13 +48,53 @@ namespace food_calculation
             IngredientsPanel.Children.Clear();
             foreach (var ingredient in ingredients)
             {
+                string text = $"{ingredient.Name}: {ingredient.Amount}";
                 TextBlock ingredientText = new TextBlock
                 {
-                    Text = $"{ingredient.Name}: {ingredient.Amount}",
+                    Text = text,
+                    FontSize = 16,
                     Margin = new Thickness(5)
                 };
                 IngredientsPanel.Children.Add(ingredientText);
             }
+        }
+
+        private void RefreshIngredients(object sender, RoutedEventArgs e)
+        {
+            IngredientAmountPanel.Children.Clear();
+            int amountPeople = 1;
+            if (AmountPeople.Text != null && AmountPeople.Text != "")
+            {
+                amountPeople = int.Parse(AmountPeople.Text);
+            }
+
+            
+            int newAmount;
+            List<Ingredient> ingredients = currDish.Ingredients;
+
+            foreach (var ingredient in ingredients)
+            {
+                string[] splitAmount = ingredient.Amount.Split(' ');
+                int oldAmount = int.Parse(splitAmount[0]);
+                newAmount = oldAmount * amountPeople;
+                string newAmountString = newAmount.ToString() + " " + splitAmount[1];
+                IngredientAmountPanel.Children.Add(new TextBlock
+                {
+                    Text = newAmountString,
+                    FontSize = 16,
+                    Margin = new Thickness(5)
+                });
+            }
+        }
+
+        private void NumberTextBox(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !IsTextNumeric(e.Text);
+        }
+
+        private bool IsTextNumeric(string text)
+        {
+            return System.Text.RegularExpressions.Regex.IsMatch(text, "^[0-9]+$");
         }
 
     }

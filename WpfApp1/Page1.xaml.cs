@@ -58,7 +58,7 @@ namespace food_calculation
             Dish selectedDish = dishManager.Dishes.FirstOrDefault(d => d.Name == dishName);
             if (selectedDish != null)
             {
-                IngredientPage ingredientPage = new IngredientPage();
+                IngredientPage ingredientPage = new IngredientPage(selectedDish);
                 ingredientPage.Title.Content = selectedDish.Name;
                 mainFrame.Content = null;
                 mainFrame.Navigate(ingredientPage);
