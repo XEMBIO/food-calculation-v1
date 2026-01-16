@@ -58,8 +58,11 @@ namespace food_calculation
             foreach (var dish in dishes)
             {
                 gerichtSeite.AddDish(dish.Name);
+
+                
             }
         }
+        
 
 
 

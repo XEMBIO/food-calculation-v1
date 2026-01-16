@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace food_calculation
 {
-    class Dish
+    public class Dish
     {
         private List<Ingredient> ingredients;
         private string name;

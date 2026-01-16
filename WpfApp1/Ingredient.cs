@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace food_calculation
 {
-    class Ingredient
+    public class Ingredient
     {
         private string name;
         private string amount;
@@ -22,6 +22,7 @@ namespace food_calculation
             get => amount;
             set => amount = value;
         }
+
 
         public Ingredient(string name, string amount)
         {

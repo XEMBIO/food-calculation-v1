@@ -49,6 +49,24 @@ namespace food_calculation
 
         }
 
+        private void DishClicked(object sender, RoutedEventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            Window parentWindow = Window.GetWindow(this);
+            var mainFrame = parentWindow.FindName("MainFrame") as Frame; 
+            string dishName = clickedButton.Content.ToString();
+            Dish selectedDish = dishManager.Dishes.FirstOrDefault(d => d.Name == dishName);
+            if (selectedDish != null)
+            {
+                IngredientPage ingredientPage = new IngredientPage();
+                ingredientPage.Title.Content = selectedDish.Name;
+                mainFrame.Content = null;
+                mainFrame.Navigate(ingredientPage);
+                ingredientPage.Display(selectedDish);
+
+            }
+        }
+
         private void RefreshMenu(object sender, RoutedEventArgs e)
         {
             dishManager.RefreshDishes(this);
@@ -59,8 +77,12 @@ namespace food_calculation
             Button btn = new Button
             {
                 Content = name,
-                FontSize = 25
+                FontSize = 25,
+                
             };
+
+            btn.Click += DishClicked;
+
             GerichtScroll.Children.Add(btn);
         }
 
