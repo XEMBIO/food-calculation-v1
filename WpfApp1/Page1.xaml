@@ -49,6 +49,14 @@
             FontSize="20"
             Click="RefreshMenu"/>
 
+        <Button
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalAlignment="Right"
+            Margin="20"
+            Width="100"
+            Content="Hinzufügen"/>
+
 
         <ScrollViewer 
             VerticalScrollBarVisibility="Visible"

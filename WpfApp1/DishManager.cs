@@ -63,7 +63,10 @@ namespace food_calculation
             }
         }
         
-
+        public void AddDish(List<Ingredient> ingredients, string name)
+        {
+            dishes.Add(new Dish(name, ingredients));
+        }
 
 
     }

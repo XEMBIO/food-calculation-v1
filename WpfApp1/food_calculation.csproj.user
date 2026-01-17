@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddDishPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="IngredientPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

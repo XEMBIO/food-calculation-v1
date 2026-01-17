@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\App.xaml
-4-39992843
+5-1761190505
 
-12-109551347
+13-1119259711
 198338916705
-IngredientPage.xaml;MainWindow.xaml;MyIngredients.xaml;Page1.xaml;
+AddDishPage.xaml;IngredientPage.xaml;MainWindow.xaml;MyIngredients.xaml;Page1.xaml;
 
 False
 
