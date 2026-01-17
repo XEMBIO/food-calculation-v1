@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BAU_BENE\\source\\repos\\food-calculation-v1.1\\WpfApp1\\food_calculation.csproj": {}
+    "C:\\Users\\Bauer\\Source\\Repos\\food-calculation-v1.2\\WpfApp1\\food_calculation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BAU_BENE\\source\\repos\\food-calculation-v1.1\\WpfApp1\\food_calculation.csproj": {
+    "C:\\Users\\Bauer\\Source\\Repos\\food-calculation-v1.2\\WpfApp1\\food_calculation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculation-v1.1\\WpfApp1\\food_calculation.csproj",
+        "projectUniqueName": "C:\\Users\\Bauer\\Source\\Repos\\food-calculation-v1.2\\WpfApp1\\food_calculation.csproj",
         "projectName": "food_calculation",
-        "projectPath": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculation-v1.1\\WpfApp1\\food_calculation.csproj",
-        "packagesPath": "C:\\Users\\BAU_BENE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculation-v1.1\\WpfApp1\\obj\\",
+        "projectPath": "C:\\Users\\Bauer\\Source\\Repos\\food-calculation-v1.2\\WpfApp1\\food_calculation.csproj",
+        "packagesPath": "C:\\Users\\Bauer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bauer\\Source\\Repos\\food-calculation-v1.2\\WpfApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\BAU_BENE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bauer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -69,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

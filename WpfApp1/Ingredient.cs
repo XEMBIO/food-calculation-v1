@@ -28,6 +28,7 @@ namespace food_calculation
         {
             this.name = name;
             this.amount = amount;
+
         }
 
         private string splitAmount()
