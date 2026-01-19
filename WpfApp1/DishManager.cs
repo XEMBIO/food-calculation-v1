@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using WpfApp1;
 using food_calculation;
+using System.Security.RightsManagement;
+using System.Windows.Media.TextFormatting;
 
 namespace food_calculation
 {
@@ -12,9 +14,10 @@ namespace food_calculation
     {
 
         private List<Dish> dishes = new List<Dish>();
+        public List<Ingredient> addedIngredients = new List<Ingredient>();
 
 
-        
+
         public List<Dish> Dishes
         {
             get => dishes;
@@ -60,7 +63,9 @@ namespace food_calculation
                 gerichtSeite.AddDish(dish.Name);
             }
         }
+
         
+
         public void AddDish(List<Ingredient> ingredients, string name)
         {
             Dishes.Add(new Dish(name, ingredients));

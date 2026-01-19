@@ -22,11 +22,15 @@ namespace food_calculation
     public partial class IngredientPage : Page
     {
 
-        Dish currDish;
-        public IngredientPage(Dish currDish)
+        private Dish currDish;
+        private DishManager dishManager;
+        public List<Ingredient> newIngredients = new List<Ingredient>();
+        public IngredientPage(Dish currDish, DishManager dishManager)
         {
             InitializeComponent();
             this.currDish = currDish;
+            this.dishManager = dishManager;
+
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
@@ -49,7 +53,7 @@ namespace food_calculation
                         mainFrame.Navigate(page1);
                         return;
                     }
-                    mainFrame.Navigate(new Page1());
+                    mainFrame.Navigate(new Page1(dishManager));
                 }
             }
         }
@@ -89,6 +93,7 @@ namespace food_calculation
                 string[] splitAmount = ingredient.Amount.Split(' ');
                 int oldAmount = int.Parse(splitAmount[0]);
                 newAmount = oldAmount * amountPeople;
+                newIngredients.Add(new Ingredient(ingredient.Name, newAmount.ToString() + " " + splitAmount[1]));
                 string newAmountString = newAmount.ToString() + " " + splitAmount[1];
                 IngredientAmountPanel.Children.Add(new TextBlock
                 {
@@ -109,5 +114,10 @@ namespace food_calculation
             return System.Text.RegularExpressions.Regex.IsMatch(text, "^[0-9]+$");
         }
 
+        private void DoneButton(object sender, RoutedEventArgs e)
+        {
+            dishManager.addedIngredients.AddRange(newIngredients);
+            BackButton(sender, e);
+        }
     }
 }

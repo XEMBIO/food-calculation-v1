@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +22,41 @@ namespace food_calculation
     /// </summary>
     public partial class MyIngredients : Page
     {
-        public MyIngredients()
+
+        DishManager dishManager;
+        public MyIngredients(DishManager dishManager)
         {
             InitializeComponent();
+
+            this.dishManager = dishManager;
+            InnitIngredients();
+        }
+
+        public void InnitIngredients()
+        {
+            IngredientsStackPanel.Children.Clear();
+            if (dishManager.addedIngredients.Count != 0)
+            {
+                foreach (Ingredient ingredient in dishManager.addedIngredients)
+                {
+                    TextBlock ingredientText = new TextBlock
+                    {
+                        Text = $"{ingredient.Name}: {ingredient.Amount}",
+                        FontSize = 16,
+                        Margin = new Thickness(5)
+                    };
+                    IngredientsStackPanel.Children.Add(ingredientText);
+                }
+            }
+            else
+            {
+                IngredientsStackPanel.Children.Add(new TextBlock
+                {
+                    Text = "No ingredients added.",
+                    FontSize = 16,
+                    Margin = new Thickness(5)
+                });
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -36,6 +70,36 @@ namespace food_calculation
                 {
                     mainFrame.Content = null;
                 }
+            }
+        }
+
+        private void RefreshButton(object sender, RoutedEventArgs e)
+        {
+            if (dishManager.addedIngredients.Count != 0)
+            {
+                IngredientsStackPanel.Children.Clear();
+                foreach (Ingredient ingredient in dishManager.addedIngredients)
+                {
+                    TextBlock ingredientText = new TextBlock
+                    {
+                        Text = $"{ingredient.Name}: {ingredient.Amount}",
+                        FontSize = 16,
+                        Margin = new Thickness(5)
+                    };
+                    IngredientsStackPanel.Children.Add(ingredientText);
+                }
+               
+            }
+            else
+            {
+                IngredientsStackPanel.Children.Clear();
+                TextBlock noIngredientsText = new TextBlock
+                {
+                    Text = "No ingredients added.",
+                    FontSize = 16,
+                    Margin = new Thickness(5)
+                };
+                IngredientsStackPanel.Children.Add(noIngredientsText);
             }
         }
     }

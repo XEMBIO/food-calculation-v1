@@ -57,7 +57,7 @@ namespace food_calculation
                         page1.RefreshFromManager();
                         return;
                     }
-                    mainFrame.Navigate(new Page1());
+                    mainFrame.Navigate(new Page1(dishManager));
                 }
             }
         }

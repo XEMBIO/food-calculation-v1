@@ -22,12 +22,12 @@ namespace food_calculation
     /// </summary>
     public partial class Page1 : Page
     {
-        private DishManager dishManager;
-        public Page1()
+        public DishManager dishManager;
+        public Page1(DishManager dishManage)
         {
             InitializeComponent();
 
-            dishManager = new DishManager();
+            dishManager = dishManage;
 
             dishManager.RefreshDishes(this);
 
@@ -63,7 +63,7 @@ namespace food_calculation
             Dish selectedDish = dishManager.Dishes.FirstOrDefault(d => d.Name == dishName);
             if (selectedDish != null)
             {
-                IngredientPage ingredientPage = new IngredientPage(selectedDish);
+                IngredientPage ingredientPage = new IngredientPage(selectedDish, dishManager);
                 ingredientPage.Title.Content = selectedDish.Name;
                 mainFrame.Content = null;
                 mainFrame.Navigate(ingredientPage);
