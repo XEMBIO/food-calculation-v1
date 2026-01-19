@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,13 +31,24 @@ namespace food_calculation
 
         private void BackButton(object sender, RoutedEventArgs e)
         {
+            if (this.NavigationService?.CanGoBack == true)
+            {
+                this.NavigationService.GoBack();
+                return;
+            }
+
             Window parentWindow = Window.GetWindow(this);
             if (parentWindow != null)
             {
                 var mainFrame = parentWindow.FindName("MainFrame") as Frame;
                 if (mainFrame != null)
                 {
-                    mainFrame.Content = null;
+                    var page1 = mainFrame.Content as Page1;
+                    if (page1 != null)
+                    {
+                        mainFrame.Navigate(page1);
+                        return;
+                    }
                     mainFrame.Navigate(new Page1());
                 }
             }

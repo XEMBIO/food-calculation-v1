@@ -8,7 +8,7 @@ using food_calculation;
 
 namespace food_calculation
 {
-    class DishManager
+    public class DishManager
     {
 
         private List<Dish> dishes = new List<Dish>();
@@ -58,14 +58,12 @@ namespace food_calculation
             foreach (var dish in dishes)
             {
                 gerichtSeite.AddDish(dish.Name);
-
-                
             }
         }
         
         public void AddDish(List<Ingredient> ingredients, string name)
         {
-            dishes.Add(new Dish(name, ingredients));
+            Dishes.Add(new Dish(name, ingredients));
         }
 
 

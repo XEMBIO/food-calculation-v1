@@ -72,3 +72,5 @@ C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\obj\Debug\net8.0-windo
 C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\obj\Debug\net8.0-windows\food_calculation.pdb
 C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\obj\Debug\net8.0-windows\food_calculation.genruntimeconfig.cache
 C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\obj\Debug\net8.0-windows\ref\food_calculation.dll
+C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\obj\Debug\net8.0-windows\AddDishPage.g.cs
+C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\obj\Debug\net8.0-windows\AddDishPage.baml

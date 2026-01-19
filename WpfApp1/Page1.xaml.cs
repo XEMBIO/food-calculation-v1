@@ -33,6 +33,11 @@ namespace food_calculation
 
         }
 
+        public void RefreshFromManager()
+        {
+            dishManager.RefreshDishes(this);
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window parentWindow = Window.GetWindow(this);
@@ -64,6 +69,21 @@ namespace food_calculation
                 mainFrame.Navigate(ingredientPage);
                 ingredientPage.Display(selectedDish);
 
+            }
+        }
+
+
+        private void AddButton(object sender, RoutedEventArgs e)
+        {
+            Window mainWindow = Window.GetWindow(this);
+
+            if (mainWindow != null)
+            {
+                var mainFrame = mainWindow.FindName("MainFrame") as Frame;
+                if (mainFrame  != null)
+                {
+                    mainFrame.Navigate(new AddDishPage(dishManager));
+                }
             }
         }
 

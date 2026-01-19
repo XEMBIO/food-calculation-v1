@@ -55,7 +55,8 @@
             HorizontalAlignment="Right"
             Margin="20"
             Width="100"
-            Content="Hinzufügen"/>
+            Content="Hinzufügen"
+            Click="AddButton"/>
 
 
         <ScrollViewer 
