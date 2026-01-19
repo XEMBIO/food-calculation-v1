@@ -25,6 +25,7 @@ namespace food_calculation
     {
 
         private DishManager dishManager;
+        private List<Ingredient> ingredients = new List<Ingredient>();
 
         public AddDishPage(DishManager dishManager_)
         {
@@ -64,7 +65,10 @@ namespace food_calculation
         private void AcceptButton(object sender, RoutedEventArgs e)
         {
             string name = DishNameTextBox?.Text?.Trim();
-            dishManager.AddDish(null, name);
+            if (ingredients != null)
+            {
+                dishManager.AddDish(ingredients, name);
+            }
             Window parentWindow = Window.GetWindow(this);
             var mainFrame = parentWindow.FindName("MainFrame") as Frame;
             var page1 = mainFrame.Content as Page1;
@@ -74,6 +78,36 @@ namespace food_calculation
             }
             BackButton(sender, e);
 
+        }
+
+        private void IngredientButton(object sender, RoutedEventArgs e)
+        {
+            string[] ingBox = IngredientName?.Text?.Trim().Split(' ');
+            
+
+            if (ingBox != null && ingBox.Length == 3)
+            {
+                string name = ingBox[0];
+                string amount = ingBox[1] + " " + ingBox[2];
+
+                ingredients.Add(new Ingredient(name, amount));
+                IngredientName.Text = "";
+            }
+
+            RefreshIngredients();
+        }
+
+        private void RefreshIngredients()
+        {
+            if (ingredients.Count > 0)
+            {
+                IngredientListPanel.Children.Clear();
+                foreach (var ingredient in ingredients)
+                {
+                    string text = $"{ingredient.Name}: {ingredient.Amount} / Person";
+                    IngredientListPanel.Children.Add(new TextBlock { Text = text });
+                }
+            }
         }
     }
 }

@@ -13,14 +13,16 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="6*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         
         <Label
@@ -34,7 +36,7 @@
             FontWeight="Bold"/>
 
         <Button
-            Grid.Column="2"
+            Grid.Column="3"
             Grid.Row="0"
             Margin="20"
             Background="#ff0000"
@@ -44,16 +46,52 @@
 
         <TextBox
             Grid.Row="1"
-            Grid.ColumnSpan="2"
+            Grid.ColumnSpan="3"
             Margin="20,5"
             Height="40"
             FontSize="20"
             x:Name="DishNameTextBox"
             />
 
-        <Button
+        <TextBox
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Margin="20,5"
+            Height="40"
+            FontSize="20"
+            x:Name="IngredientName"/>
+
+        <ScrollViewer
             Grid.Row="3"
+            Grid.ColumnSpan="2"
+            Margin="20,5"
+            Background="White"
+            VerticalScrollBarVisibility="Auto"
+            >
+
+            <StackPanel
+                x:Name="IngredientListPanel"
+                >
+                
+            </StackPanel>
+
+        </ScrollViewer>
+
+
+        <Button
+            Grid.Row="2"
             Grid.Column="2"
+            Margin="0,5"
+            Content="->"
+            Background="#7a7aff"
+            FontSize="30"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Top"
+            Click="IngredientButton"/>
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="3"
             Margin="5"
             Content="Bestätigen"
             FontSize="20"

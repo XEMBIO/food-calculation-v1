@@ -60,7 +60,7 @@
 
 
         <ScrollViewer 
-            VerticalScrollBarVisibility="Visible"
+            VerticalScrollBarVisibility="Auto"
             Grid.Row="1"
             Grid.ColumnSpan="3"
             Margin="30"
