@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using food_calculation;
 
 namespace WpfApp1
 {
@@ -16,15 +17,21 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        public DishManager dishManager = new DishManager();
         public MainWindow()
         {
             InitializeComponent();
         
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            MainFrame.Navigate(new Page1(dishManager));
+        }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new MyIngredients(dishManager));
         }
     }
 }
