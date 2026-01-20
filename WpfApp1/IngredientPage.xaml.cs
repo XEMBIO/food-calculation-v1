@@ -31,6 +31,7 @@ namespace food_calculation
             this.currDish = currDish;
             this.dishManager = dishManager;
 
+
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
@@ -78,21 +79,26 @@ namespace food_calculation
         private void RefreshIngredients(object sender, RoutedEventArgs e)
         {
             IngredientAmountPanel.Children.Clear();
-            int amountPeople = 1;
+            double amountPeople = 1;
             if (AmountPeople.Text != null && AmountPeople.Text != "")
             {
                 amountPeople = int.Parse(AmountPeople.Text);
             }
 
             
-            int newAmount;
+            double newAmount;
             List<Ingredient> ingredients = currDish.Ingredients;
 
             foreach (var ingredient in ingredients)
             {
                 string[] splitAmount = ingredient.Amount.Split(' ');
-                int oldAmount = int.Parse(splitAmount[0]);
+                double oldAmount = double.Parse(splitAmount[0]);
                 newAmount = oldAmount * amountPeople;
+                newAmount = FormatAmount(newAmount, splitAmount[1]);
+                if (newAmount != oldAmount * amountPeople)
+                {
+                    splitAmount[1] = FormatUnit(splitAmount[1]);
+                }
                 newIngredients.Add(new Ingredient(ingredient.Name, newAmount.ToString() + " " + splitAmount[1]));
                 string newAmountString = newAmount.ToString() + " " + splitAmount[1];
                 IngredientAmountPanel.Children.Add(new TextBlock
@@ -101,6 +107,65 @@ namespace food_calculation
                     FontSize = 16,
                     Margin = new Thickness(5)
                 });
+            }
+        }
+
+        private string FormatUnit(string unit)
+        {
+            switch(unit)
+            {
+                case "g":
+                    return "kg";
+                    
+                case "kg":
+                    return "g";
+                    
+                case "ml":
+                    return "l";
+
+                case "l":
+                    return "ml";
+
+                default:
+                    return unit;
+            }
+        }
+
+        private double FormatAmount(double amount, string unit)
+        {
+            if (unit == "g" || unit == "ml")
+            {
+                if (amount >= 1000)
+                {
+                    return amount / 1000;
+                }
+                return amount;
+            }
+            else if (unit == "kg")
+            {
+                if (amount < 1)
+                {
+                    return amount * 1000;
+                }
+                else
+                {
+                    return amount;
+                }
+            }
+            else if (unit == "l")
+            {
+                if (amount < 1)
+                {
+                    return amount * 1000;
+                }
+                else
+                {
+                    return amount;
+                }
+            }
+            else
+            {
+                return amount;
             }
         }
 

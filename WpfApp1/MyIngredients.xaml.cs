@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Printing;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,28 +25,59 @@ namespace food_calculation
     {
 
         DishManager dishManager;
+        public RepeatManager repeatManager;
         public MyIngredients(DishManager dishManager)
         {
             InitializeComponent();
 
             this.dishManager = dishManager;
+            repeatManager = new RepeatManager(dishManager.addedIngredients);
             InnitIngredients();
         }
 
         public void InnitIngredients()
         {
+            repeatManager.ingredients = dishManager.addedIngredients;
             IngredientsStackPanel.Children.Clear();
             if (dishManager.addedIngredients.Count != 0)
             {
                 foreach (Ingredient ingredient in dishManager.addedIngredients)
                 {
-                    TextBlock ingredientText = new TextBlock
+                    bool twice = false;
+                    int index = dishManager.addedIngredients.IndexOf(ingredient);
+                    int oldIndex = 0;
+                    for (int i = 0; i < index; i++)
+                    {
+                        if (dishManager.addedIngredients[i].Name.ToLower() == ingredient.Name.ToLower())
+                        {
+                            twice = true;
+                            oldIndex = i;
+                            break;
+                        }
+                    }
+                    TextBlock ingredientText = new TextBlock();
+
+
+                    ingredientText = new TextBlock
                     {
                         Text = $"{ingredient.Name}: {ingredient.Amount}",
                         FontSize = 16,
                         Margin = new Thickness(5)
                     };
+
+                    if (twice)
+                    {
+                        if (IngredientsStackPanel.Children[oldIndex] is TextBlock textBlock)
+                        {
+                            string[] splitted = textBlock.Text.Split(' ');
+                            textBlock.Text = $"{splitted[0]}: {splitted[1]} + {ingredient.Amount}";
+                        }
+                    }
+
                     IngredientsStackPanel.Children.Add(ingredientText);
+
+
+
                 }
             }
             else
@@ -59,6 +91,7 @@ namespace food_calculation
             }
         }
 
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window parentWindow = Window.GetWindow(this);
@@ -70,36 +103,6 @@ namespace food_calculation
                 {
                     mainFrame.Content = null;
                 }
-            }
-        }
-
-        private void RefreshButton(object sender, RoutedEventArgs e)
-        {
-            if (dishManager.addedIngredients.Count != 0)
-            {
-                IngredientsStackPanel.Children.Clear();
-                foreach (Ingredient ingredient in dishManager.addedIngredients)
-                {
-                    TextBlock ingredientText = new TextBlock
-                    {
-                        Text = $"{ingredient.Name}: {ingredient.Amount}",
-                        FontSize = 16,
-                        Margin = new Thickness(5)
-                    };
-                    IngredientsStackPanel.Children.Add(ingredientText);
-                }
-               
-            }
-            else
-            {
-                IngredientsStackPanel.Children.Clear();
-                TextBlock noIngredientsText = new TextBlock
-                {
-                    Text = "No ingredients added.",
-                    FontSize = 16,
-                    Margin = new Thickness(5)
-                };
-                IngredientsStackPanel.Children.Add(noIngredientsText);
             }
         }
     }

@@ -26,7 +26,7 @@ namespace food_calculation
 
         public DishManager()
         {
-            this.dishes = dishes;
+
 
             dishes.Add(new Dish("Pasta", new List<Ingredient>
             {

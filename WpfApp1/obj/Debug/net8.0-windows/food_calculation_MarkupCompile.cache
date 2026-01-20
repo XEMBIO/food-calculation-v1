@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\obj\Debug\net8.0-windows\
+C:\Users\BAU_BENE\source\repos\food-calculations\WpfApp1\obj\Debug\net8.0-windows\
 food_calculation
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Bauer\Source\Repos\food-calculation-v1.2\WpfApp1\App.xaml
+C:\Users\BAU_BENE\source\repos\food-calculations\WpfApp1\App.xaml
 5-1761190505
 
-11-47949323
+121683633185
 198338916705
 AddDishPage.xaml;IngredientPage.xaml;MainWindow.xaml;MyIngredients.xaml;Page1.xaml;
 

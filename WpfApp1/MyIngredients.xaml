@@ -41,13 +41,6 @@
             Content="Zurück"
             FontSize="20" Click="Button_Click"/>
 
-        <Button
-            Grid.Column="0"
-            Grid.Row="0"
-            Margin="20"
-            Background="#5555ff"
-            Click="RefreshButton"/>
-
         <ScrollViewer
             VerticalScrollBarVisibility="Auto"
             Grid.Row="1"
@@ -58,10 +51,8 @@
             <StackPanel
                 x:Name="IngredientsStackPanel"
                 Margin="10">
-                
+
             </StackPanel>
-
-
         </ScrollViewer>
     </Grid>
 </Page>
