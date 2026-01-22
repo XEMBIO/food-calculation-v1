@@ -43,20 +43,8 @@ namespace food_calculation
             {
                 foreach (Ingredient ingredient in dishManager.addedIngredients)
                 {
-                    bool twice = false;
-                    int index = dishManager.addedIngredients.IndexOf(ingredient);
-                    int oldIndex = 0;
-                    for (int i = 0; i < index; i++)
-                    {
-                        if (dishManager.addedIngredients[i].Name.ToLower() == ingredient.Name.ToLower())
-                        {
-                            twice = true;
-                            oldIndex = i;
-                            break;
-                        }
-                    }
-                    TextBlock ingredientText = new TextBlock();
 
+                    TextBlock ingredientText = new TextBlock();
 
                     ingredientText = new TextBlock
                     {
@@ -64,19 +52,8 @@ namespace food_calculation
                         FontSize = 16,
                         Margin = new Thickness(5)
                     };
-
-                    if (twice)
-                    {
-                        if (IngredientsStackPanel.Children[oldIndex] is TextBlock textBlock)
-                        {
-                            string[] splitted = textBlock.Text.Split(' ');
-                            textBlock.Text = $"{splitted[0]}: {splitted[1]} + {ingredient.Amount}";
-                        }
-                    }
-
+                    
                     IngredientsStackPanel.Children.Add(ingredientText);
-
-
 
                 }
             }
