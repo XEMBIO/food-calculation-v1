@@ -39,22 +39,19 @@ namespace food_calculation
         {
             repeatManager.ingredients = dishManager.addedIngredients;
             IngredientsStackPanel.Children.Clear();
-            if (dishManager.addedIngredients.Count != 0)
+            repeatManager.RefreshMyIngredients();
+            if (repeatManager.ingredientNames.Count != 0)
             {
-                foreach (Ingredient ingredient in dishManager.addedIngredients)
+                foreach (var ingredient in repeatManager.ingredientNames)
                 {
-
-                    TextBlock ingredientText = new TextBlock();
-
-                    ingredientText = new TextBlock
+                    int index = repeatManager.ingredientNames.IndexOf(ingredient);
+                    string amount = repeatManager.ingredientAmounts[index];
+                    IngredientsStackPanel.Children.Add(new TextBlock
                     {
-                        Text = $"{ingredient.Name}: {ingredient.Amount}",
+                        Text = $"{ingredient}: {amount}",
                         FontSize = 16,
                         Margin = new Thickness(5)
-                    };
-                    
-                    IngredientsStackPanel.Children.Add(ingredientText);
-
+                    });
                 }
             }
             else

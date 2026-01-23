@@ -38,10 +38,32 @@ namespace food_calculation
                     if (totalAmount >= 1000)
                     {
                         totalAmount = totalAmount / 1000;
-
+                        existingAmount[1] = getUnit(existingAmount[1]);
                     }
 
+                    ingredientAmounts[index] = $"{totalAmount} {existingAmount[1]}";
                 }
+                else
+                {
+                    ingredientNames.Add(ingredient.Name);
+                    ingredientAmounts.Add(ingredient.Amount);
+                }
+            }
+        }
+
+        private string getUnit(string unit)
+        {
+            if (unit.ToLower() == "g")
+            {
+                return "kg";
+            }
+            else if (unit.ToLower() == "ml")
+            {
+                return "l";
+            }
+            else
+            {
+                return unit;
             }
         }
 
