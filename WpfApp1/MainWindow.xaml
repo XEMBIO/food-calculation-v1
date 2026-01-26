@@ -6,54 +6,124 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="LayoutRoot" Background="#afe2f2">
+
+
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.Background>
+
+            <LinearGradientBrush>
+
+                <GradientStop Color="#006ba9" Offset="0"/>
+                <GradientStop Color="#001a4a" Offset="1"/>
+
+            </LinearGradientBrush>
+
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="267*"/>
+            <ColumnDefinition Width="267*"/>
+            <ColumnDefinition Width="215*"/>
+            <ColumnDefinition Width="52*"/>
         </Grid.ColumnDefinitions>
+
+
 
         <Label 
             Grid.Row="0"
-            Grid.Column="1"
-            FontFamily="Roboto" 
+            Grid.ColumnSpan="4"
+            
+            FontWeight="Bold"
             Content="Kalkulation" 
             HorizontalAlignment="Center" 
-            Margin="0,30" 
-            FontSize="35" />
-        
-        <Button 
-            Grid.Row="1"
+            VerticalAlignment="Center"
+            Padding="20"
+            FontSize="50" 
+            Foreground="White"/>
+
+
+        <Button Content="Gerichte" 
+                
+                Click="Button_Click"
+                Grid.ColumnSpan="2" 
+                Grid.Row="1" 
+                Margin="30"
+                FontSize="{Binding ElementName=MeineZutaten, Path=FontSize}"
+                Foreground="White"
+                x:Name="GerichteButton">
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border 
+                        Background="#a7000000" 
+                        CornerRadius="25" 
+                        Padding="10">
+                        
+                            <TextBlock 
+                                Text="Gerichte"
+                                Foreground="White"
+                                TextAlignment="Center"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                FontSize="{TemplateBinding FontSize}"/>
+                        
+
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <Button
+            Content="Zutaten"
+            Click="Button_Click2"
+            FontSize="30"
+            Grid.Column="2" 
             Grid.ColumnSpan="2"
-            Content="Gerichte" 
-            Padding="20" 
-            FontSize="25"
-            Background="#a3a3f0"
-            HorizontalAlignment="Stretch" 
-            VerticalAlignment="Stretch" 
-            Margin="30" Click="Button_Click" />
-        
-        
-        <Button 
-            Grid.Row="1"
-            Grid.Column="2"
-            Content="Meine Zutaten" 
-            FontSize="25"
-            Background="#f1a4b8"
-            Padding="20" 
-            Margin="30" 
-            HorizontalAlignment="Stretch" 
-            VerticalAlignment="Stretch"
-            Click="Button_Click2"/>
+            Grid.Row="1" 
+            Margin="30"
+            Foreground="White"
+            x:Name="MeineZutaten">
+            
+            <Button.Template>
+                
+                <ControlTemplate TargetType="Button">
+                    
+                    <Border 
+                        Background="#a7000000" 
+                        CornerRadius="25" 
+                        Padding="10">
+
+                        
+
+                            <TextBlock 
+                                Text="Zutaten"
+                                Foreground="White"
+                                TextAlignment="Center"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                FontSize="{TemplateBinding FontSize}"/>
+
+                        
+
+                    </Border>
+                    
+                </ControlTemplate>
+                
+            </Button.Template>
+            
+        </Button>
 
         <Frame
             Grid.RowSpan="2"
-            Grid.ColumnSpan="3"
+            Grid.ColumnSpan="4"
             x:Name="MainFrame"
             NavigationUIVisibility="Hidden"/>
 
