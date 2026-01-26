@@ -8,7 +8,18 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MyIngredients">
 
-    <Grid Background="#afe2f2">
+    <Grid>
+
+        <Grid.Background>
+
+            <LinearGradientBrush>
+
+                <GradientStop Color="#006ba9" Offset="0"/>
+                <GradientStop Color="#001a4a" Offset="1"/>
+
+            </LinearGradientBrush>
+
+        </Grid.Background>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -29,24 +40,44 @@
             FontSize="40"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
-            FontWeight="Bold"/>
+            FontWeight="Bold"
+            Foreground="White"
+            x:Name="Title"/>
 
         <Button
-            Grid.Row="0"
             Grid.Column="2"
+            Grid.Row="0"
             Margin="20"
-            Background="#ff0000"
-            BorderThickness="4"
-            BorderBrush="#000000"
             Content="Zurück"
-            FontSize="20" Click="Button_Click"/>
+            Click="Button_Click"
+            FontSize="20"
+            x:Name="BackButton">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Background="#a1000000"
+                        CornerRadius="25"
+                        >
+                        <TextBlock
+                            Text="Zurück"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Padding="10"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="White"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
         <ScrollViewer
             VerticalScrollBarVisibility="Auto"
             Grid.Row="1"
             Grid.ColumnSpan="3"
             Margin="20"
-            Background="White">
+            Background="#a1000000"
+            FontSize="20"
+            x:Name="ScrollViewerJapp">
 
             <StackPanel
                 x:Name="IngredientsStackPanel"

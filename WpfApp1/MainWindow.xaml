@@ -39,7 +39,7 @@
         <Label 
             Grid.Row="0"
             Grid.ColumnSpan="4"
-            
+            x:Name="Title"
             FontWeight="Bold"
             Content="Kalkulation" 
             HorizontalAlignment="Center" 

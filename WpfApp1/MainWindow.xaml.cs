@@ -21,7 +21,22 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            this.SizeChanged += MainWindow_SizeChanged;
+            
+        }
 
+        private void MainWindow_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            UpdateFontSizes();
+        }
+
+        private void UpdateFontSizes()
+        {
+            // Schriftgröße basierend auf Fensterbreite berechnen
+            double fontSize = this.ActualWidth * 0.06; // 4% der Breite
+            MeineZutaten.FontSize = fontSize;
+            GerichteButton.FontSize = fontSize;
+            Title.FontSize = fontSize; // Titel etwas größer
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
