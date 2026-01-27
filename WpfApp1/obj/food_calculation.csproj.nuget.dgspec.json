@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BAU_BENE\\source\\repos\\food-calculations\\WpfApp1\\food_calculation.csproj": {}
+    "C:\\Users\\wuers\\source\\repos\\food-calculation\\WpfApp1\\food_calculation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BAU_BENE\\source\\repos\\food-calculations\\WpfApp1\\food_calculation.csproj": {
+    "C:\\Users\\wuers\\source\\repos\\food-calculation\\WpfApp1\\food_calculation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculations\\WpfApp1\\food_calculation.csproj",
+        "projectUniqueName": "C:\\Users\\wuers\\source\\repos\\food-calculation\\WpfApp1\\food_calculation.csproj",
         "projectName": "food_calculation",
-        "projectPath": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculations\\WpfApp1\\food_calculation.csproj",
-        "packagesPath": "C:\\Users\\BAU_BENE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BAU_BENE\\source\\repos\\food-calculations\\WpfApp1\\obj\\",
+        "projectPath": "C:\\Users\\wuers\\source\\repos\\food-calculation\\WpfApp1\\food_calculation.csproj",
+        "packagesPath": "C:\\Users\\wuers\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wuers\\source\\repos\\food-calculation\\WpfApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\BAU_BENE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wuers\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,6 +60,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -69,7 +86,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
