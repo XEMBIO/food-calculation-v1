@@ -8,8 +8,19 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid Background="#afe2f2">
-        
+    <Grid>
+
+        <Grid.Background>
+
+            <LinearGradientBrush>
+
+                <GradientStop Color="#006ba9" Offset="0"/>
+                <GradientStop Color="#001a4a" Offset="1"/>
+
+            </LinearGradientBrush>
+
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="3*"/>
@@ -17,61 +28,113 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Label
             Grid.Row="0"
             Grid.Column="1"
+            Grid.ColumnSpan="2"
             Content="Gerichte"
-            Margin="20"
+            Margin="20,0"
             FontSize="40"
+            Foreground="White"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
-            FontWeight="Bold"/>
+            FontWeight="Bold"
+            x:Name="Title"/>
 
         <Button
             Grid.Row="0"
-            Grid.Column="2"
+            Grid.Column="3"
             Margin="20"
-            Background="#ff0000"
+            Background="#a1000000"
             Content="Zurück"
             FontSize="20"
-            BorderThickness="4" Click="Button_Click"/>
+            Foreground="White"
+            Click="Button_Click"
+            x:Name="BackButton">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="25"
+                        >
+                        <ContentPresenter 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
         <Button
             Grid.Row="0"
             Grid.Column="0"
             Margin="20"
-            Background="#aaaaff"
+            Background="#a1000000"
             Content="Refresh"
             FontSize="20"
-            Click="RefreshMenu"/>
+            Click="RefreshMenu"
+            Foreground="White"
+            x:Name="RefreshButton">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="25">
+                        <ContentPresenter 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
         <Button
             Grid.Row="0"
-            Grid.Column="1"
-            HorizontalAlignment="Right"
+            Grid.Column="2"
             Margin="20"
-            Width="100"
             Content="Hinzufügen"
-            Click="AddButton"/>
+            Click="AddButton"
+            Foreground="White"
+            Background="#a1000000"
+            x:Name="Add_Button">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="25">
+                        <ContentPresenter 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
-
+        <Border
+            Grid.Row="1"
+            Grid.ColumnSpan="4"
+            Margin="25"
+            Background="#a1000000"
+            CornerRadius="30">
         <ScrollViewer 
             VerticalScrollBarVisibility="Auto"
             Grid.Row="1"
-            Grid.ColumnSpan="3"
-            Margin="30"
-            Background="AliceBlue"
+            Grid.ColumnSpan="4"
+            Background="Transparent"
             x:Name="GerichtMenu">
-            
+
             <StackPanel x:Name="GerichtScroll">
-           
+
             </StackPanel>
 
         </ScrollViewer>
+
+        </Border>
 
     </Grid>
 </Page>

@@ -8,7 +8,18 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AddDishPage">
 
-    <Grid Background="#afe2f2">
+    <Grid>
+
+        <Grid.Background>
+
+            <LinearGradientBrush>
+
+                <GradientStop Color="#006ba9" Offset="0"/>
+                <GradientStop Color="#001a4a" Offset="1"/>
+
+            </LinearGradientBrush>
+
+        </Grid.Background>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -28,9 +39,12 @@
         <Label
             Grid.Row="0"
             Grid.Column="1"
+            Grid.ColumnSpan="2"
             Content="Gericht hinzufügen"
-            Margin="20"
+            Margin="20,0"
+            x:Name="Title"
             FontSize="35"
+            Foreground="White"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
             FontWeight="Bold"/>
@@ -39,10 +53,30 @@
             Grid.Column="3"
             Grid.Row="0"
             Margin="20"
-            Background="#ff0000"
             Content="Zurück"
             FontSize="20"
-            Click="BackButton"/>
+            Click="BackButton">
+
+            <Button.Template>
+
+                <ControlTemplate TargetType="Button">
+
+                    <Border Background="#a1000000" CornerRadius="25">
+
+                        <TextBlock 
+                            Text="Zurück"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="White"
+                            TextAlignment="Center"
+                            VerticalAlignment="Center"/>
+
+                    </Border>
+
+                </ControlTemplate>
+                
+            </Button.Template>
+                
+        </Button>
 
         <TextBox
             Grid.Row="1"

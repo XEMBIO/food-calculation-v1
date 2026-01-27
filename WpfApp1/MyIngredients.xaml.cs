@@ -26,13 +26,33 @@ namespace food_calculation
 
         DishManager dishManager;
         public RepeatManager repeatManager;
+
+        public double fontSize = 1;
         public MyIngredients(DishManager dishManager)
         {
             InitializeComponent();
 
             this.dishManager = dishManager;
             repeatManager = new RepeatManager(dishManager.addedIngredients);
+            this.SizeChanged += MyIngredients_SizeChanged;
             InnitIngredients();
+        }
+
+        private void MyIngredients_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            UpdateFontSizes();
+        }
+
+        private void UpdateFontSizes()
+        {
+            fontSize = this.ActualWidth * 0.05; // 5% der Breite
+            Title.FontSize = fontSize; // Titel etwas größer
+            BackButton.FontSize = fontSize * 0.5;
+
+            foreach (var child in IngredientsStackPanel.Children.OfType<TextBlock>())
+            {
+                child.FontSize = fontSize * 0.4; 
+            }
         }
 
         public void InnitIngredients()
@@ -50,7 +70,8 @@ namespace food_calculation
                     {
                         Text = $"{ingredient}: {amount}",
                         FontSize = 16,
-                        Margin = new Thickness(5)
+                        Margin = new Thickness(5),
+                        Foreground = Brushes.White
                     });
                 }
             }
@@ -60,7 +81,8 @@ namespace food_calculation
                 {
                     Text = "No ingredients added.",
                     FontSize = 16,
-                    Margin = new Thickness(5)
+                    Margin = new Thickness(5),
+                    Foreground = Brushes.White
                 });
             }
         }

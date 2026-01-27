@@ -39,12 +39,12 @@
         <Label 
             Grid.Row="0"
             Grid.ColumnSpan="4"
-            
+            x:Name="Title"
             FontWeight="Bold"
             Content="Kalkulation" 
-            HorizontalAlignment="Center" 
-            VerticalAlignment="Center"
-            Padding="20"
+            VerticalContentAlignment="Center"
+            HorizontalContentAlignment="Center"
+            Margin="20,0"
             FontSize="50" 
             Foreground="White"/>
 

@@ -23,6 +23,7 @@ namespace food_calculation
     public partial class Page1 : Page
     {
         public DishManager dishManager;
+        public double fontSize = 1;
         public Page1(DishManager dishManage)
         {
             InitializeComponent();
@@ -31,6 +32,26 @@ namespace food_calculation
 
             dishManager.RefreshDishes(this);
 
+            this.SizeChanged += Ingredient_SizeChanged;
+
+        }
+
+        private void Ingredient_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            ChangeSizeNow();
+        }
+
+        private void ChangeSizeNow()
+        {
+            fontSize = this.ActualWidth * 0.05; // 5% der Breite
+            Title.FontSize = fontSize; // Titel etwas größer
+            BackButton.FontSize = fontSize * 0.5;
+            RefreshButton.FontSize = fontSize * 0.5;
+            Add_Button.FontSize = fontSize * 0.4;
+            foreach (var child in GerichtScroll.Children.OfType<Button>())
+            {
+                child.FontSize = fontSize * 0.5;
+            }
         }
 
         public void RefreshFromManager()
@@ -90,6 +111,7 @@ namespace food_calculation
         private void RefreshMenu(object sender, RoutedEventArgs e)
         {
             dishManager.RefreshDishes(this);
+            ChangeSizeNow();
         }
 
         public void AddDish(string name)
@@ -98,9 +120,26 @@ namespace food_calculation
             {
                 Content = name,
                 FontSize = 25,
-                
+                Foreground = Brushes.White,
+                Background = Brushes.Transparent,
+                BorderThickness = new Thickness(0),
             };
 
+            var template = new ControlTemplate(typeof(Button));
+            var borderFactory = new FrameworkElementFactory(typeof(Border));
+            borderFactory.SetValue(Border.CornerRadiusProperty, new CornerRadius(25));
+            borderFactory.SetValue(Border.BackgroundProperty, new TemplateBindingExtension(Button.BackgroundProperty));
+            borderFactory.SetValue(Border.PaddingProperty, new Thickness(10));
+
+            var contentPresenterFactory = new FrameworkElementFactory(typeof(ContentPresenter));
+            contentPresenterFactory.SetValue(ContentPresenter.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+            contentPresenterFactory.SetValue(ContentPresenter.VerticalAlignmentProperty, VerticalAlignment.Center);
+
+            borderFactory.AppendChild(contentPresenterFactory);
+            template.VisualTree = borderFactory;
+
+
+            btn.Template = template;
             btn.Click += DishClicked;
 
             GerichtScroll.Children.Add(btn);
