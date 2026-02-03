@@ -26,15 +26,31 @@ namespace food_calculation
 
         private DishManager dishManager;
         private List<Ingredient> ingredients = new List<Ingredient>();
+        double newFontSize = 0;
 
         public AddDishPage(DishManager dishManager_)
         {
             InitializeComponent();
             dishManager = dishManager_;
+
+            this.SizeChanged += ChangedSize_AddDish;
             
         }
 
-        
+        private void ChangedSize_AddDish(object sender, SizeChangedEventArgs e)
+        {
+            newFontSize = this.ActualWidth * 0.05;
+            Title.FontSize = newFontSize;
+            backButton.FontSize = newFontSize * 0.5;
+            AddButton.FontSize = newFontSize * 0.4;
+            DishNameTextBox.FontSize = newFontSize * 0.5;
+            foreach (var ingredient in IngredientListPanel.Children.OfType<TextBlock>())
+            {
+                ingredient.FontSize = newFontSize * 0.4;    
+            }
+        }
+
+
 
         private void BackButton(object sender, RoutedEventArgs e)
         {
@@ -105,7 +121,7 @@ namespace food_calculation
                 foreach (var ingredient in ingredients)
                 {
                     string text = $"{ingredient.Name}: {ingredient.Amount} / Person";
-                    IngredientListPanel.Children.Add(new TextBlock { Text = text });
+                    IngredientListPanel.Children.Add(new TextBlock { Text = text, Foreground = Brushes.White, FontSize = newFontSize * 0.4 });
                 }
             }
         }

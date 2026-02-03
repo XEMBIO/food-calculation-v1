@@ -35,7 +35,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        
+
         <Label
             Grid.Row="0"
             Grid.Column="1"
@@ -55,7 +55,8 @@
             Margin="20"
             Content="Zurück"
             FontSize="20"
-            Click="BackButton">
+            Click="BackButton"
+            x:Name="backButton">
 
             <Button.Template>
 
@@ -73,55 +74,108 @@
                     </Border>
 
                 </ControlTemplate>
-                
+
             </Button.Template>
-                
+
         </Button>
 
-        <TextBox
+        <Border
             Grid.Row="1"
+            Grid.Column="0"
             Grid.ColumnSpan="3"
-            Margin="20,5"
-            Height="40"
-            FontSize="20"
-            x:Name="DishNameTextBox"
+            Margin="20,7,0,7"
+            Background="#a1000000"
+            CornerRadius="20"
+            BorderThickness="0">
+
+            <TextBox
+                Background="Transparent"
+                BorderThickness="0"
+                Foreground="White"
+                Margin="10,0"
+                FontSize="20"
+                x:Name="DishNameTextBox"
+                VerticalContentAlignment="Center"
             />
 
-        <TextBox
-            Grid.Row="2"
-            Grid.ColumnSpan="2"
-            Margin="20,5"
-            Height="40"
-            FontSize="20"
-            x:Name="IngredientName"/>
+        </Border>
 
-        <ScrollViewer
-            Grid.Row="3"
+
+        <Border
+            Grid.Row="2"
+            Grid.Column="0"
             Grid.ColumnSpan="2"
-            Margin="20,5"
-            Background="White"
-            VerticalScrollBarVisibility="Auto"
+            Background="#a1000000"
+            Margin="20,7,3,7"
+            CornerRadius="20"
+            BorderThickness="0">
+
+            <TextBox
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Background="Transparent"
+                Foreground="White"
+                Margin="10,0"
+                BorderThickness="0"
+                FontSize="20"
+                VerticalContentAlignment="Center"
+                x:Name="IngredientName"
+            />
+
+        </Border>
+
+        <Border
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Margin="20,7,0,7"
+            Background="#a1000000"
+            CornerRadius="20">
+
+            <ScrollViewer
+                Background="Transparent"
+                VerticalScrollBarVisibility="Auto"
+                Margin="8"
             >
 
-            <StackPanel
-                x:Name="IngredientListPanel"
+                <StackPanel
+                    x:Name="IngredientListPanel"
                 >
-                
-            </StackPanel>
 
-        </ScrollViewer>
+                </StackPanel>
+
+            </ScrollViewer>
+
+        </Border>
+        
+        
 
 
         <Button
             Grid.Row="2"
             Grid.Column="2"
-            Margin="0,5"
-            Content="->"
+            Margin="0,7"
             Background="#7a7aff"
-            FontSize="30"
+            FontSize="20"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Top"
-            Click="IngredientButton"/>
+            Click="IngredientButton"
+            x:Name="AddButton">
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#a1000000" CornerRadius="20">
+                        <TextBlock 
+                            Text="add"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="White"
+                            TextAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
 
         <Button
             Grid.Row="4"
