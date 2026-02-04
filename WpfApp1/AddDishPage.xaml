@@ -183,8 +183,24 @@
             Margin="5"
             Content="Bestätigen"
             FontSize="20"
-            Background="#00ff00"
-            Click="AcceptButton"/>
+            Click="AcceptButton"
+            x:Name="acceptButton">
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#a1000000" CornerRadius="25">
+                        <TextBlock 
+                            Text="Bestätigen"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="White"
+                            TextAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+
+            </Button.Template>
+
+        </Button>
 
     </Grid>
 </Page>

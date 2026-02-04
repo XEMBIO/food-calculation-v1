@@ -8,7 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="IngredientPage">
 
-    <Grid Background="#afe2f2">
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#006ba9" Offset="0"/>
+                <GradientStop Color="#001a4a" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -17,7 +24,7 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="4*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
@@ -31,7 +38,8 @@
             HorizontalContentAlignment="Center"
             FontSize="35"
             FontWeight="Bold"
-            x:Name="Title"/>
+            x:Name="Title"
+            Foreground="White"/>
 
         <Button
             Grid.Row="0"
@@ -41,50 +49,116 @@
             BorderThickness="4"
             Content="Zurück"
             FontSize="20"
-            Click="BackButton"/>
+            Click="BackButton"
+            Foreground="White"
+            x:Name="backButton">
 
-        <TextBox
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Background="#a1000000"
+                        CornerRadius="25"
+                        >
+                        <ContentPresenter
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+
+
+        <Border
             Grid.Row="0"
             Grid.Column="0"
-            Margin="60,60,0,0"
-            Background="White"
-            HorizontalContentAlignment="Center"
-            VerticalContentAlignment="Center"
-            PreviewTextInput="NumberTextBox"
-            x:Name="AmountPeople"/>
+            CornerRadius="20"
+            Background="#a1000000"
+            Margin="30,60,3,0"
+            >
+
+            <TextBox
+
+                Background="Transparent"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                PreviewTextInput="NumberTextBox"
+                Foreground="White"
+                BorderThickness="0"
+                Margin="5"
+                x:Name="AmountPeople"/>
+
+        </Border>
+
 
         <Button
             Grid.Row="0"
             Grid.Column="1"
             Width="60"
-            Margin="0,60,0,0"
+            Margin="2,60,0,0"
             HorizontalAlignment="Left"
-            Background="#5989ff"
-            Click="RefreshIngredients"/>
+            Click="RefreshIngredients"
+            x:Name="AddButton">
 
-        
+            <Button.Template>
 
-        <ScrollViewer 
-            VerticalScrollBarVisibility="Auto"
+                <ControlTemplate TargetType="Button">
+
+                    <Border
+                        Background="#a1000000"
+                        CornerRadius="20">
+
+                        <ContentPresenter
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+
+                    </Border>
+                    
+                </ControlTemplate>
+                
+            </Button.Template>
+            
+        </Button>
+
+
+        <Border
             Grid.Row="1"
             Grid.RowSpan="2"
-            Grid.ColumnSpan="3"
-            Margin="30"
-            Background="AliceBlue"
-            >
-            <StackPanel x:Name="IngredientsPanel"></StackPanel>
-            
-        </ScrollViewer>
-        <ScrollViewer 
-            VerticalScrollBarVisibility="Auto"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            CornerRadius="25"
+            Background="#a1000000"
+            Margin="30">
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                
+                <StackPanel 
+                    Margin="7"
+                    x:Name="IngredientsPanel">
+                    
+                </StackPanel>
+
+            </ScrollViewer>
+
+        </Border>
+
+        <Border
             Grid.Row="1"
             Grid.RowSpan="2"
             Grid.Column="1"
-            Margin="150,30"
-            Background="AliceBlue"
-            x:Name="IngredientMenu">
-            <StackPanel x:Name="IngredientAmountPanel"></StackPanel>
-        </ScrollViewer>
+            Margin="180,30,30,30"
+            Background="Transparent">
+
+            <ScrollViewer 
+                Margin="7"
+                VerticalScrollBarVisibility="Auto"
+                x:Name="IngredientMenu">
+                <StackPanel x:Name="IngredientAmountPanel"></StackPanel>
+            </ScrollViewer>
+
+        </Border>
+        
+        
 
         <Button
             Grid.Row="1"
@@ -93,7 +167,26 @@
             Background="#00ff00"
             Content="Bestätigen"
             FontSize="20"
-            Click="DoneButton"/>
+            Click="DoneButton"
+            Foreground="White">
+
+            <Button.Template>
+
+                <ControlTemplate TargetType="Button">
+
+                    <Border Background="#a1000000" CornerRadius="25">
+
+                        <ContentPresenter 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+
+                    </Border>
+
+                </ControlTemplate>
+                
+            </Button.Template>
+
+        </Button>
 
     </Grid>
 </Page>

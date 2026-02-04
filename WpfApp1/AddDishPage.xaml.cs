@@ -44,6 +44,7 @@ namespace food_calculation
             backButton.FontSize = newFontSize * 0.5;
             AddButton.FontSize = newFontSize * 0.4;
             DishNameTextBox.FontSize = newFontSize * 0.5;
+            acceptButton.FontSize = newFontSize * 0.5;
             foreach (var ingredient in IngredientListPanel.Children.OfType<TextBlock>())
             {
                 ingredient.FontSize = newFontSize * 0.4;    

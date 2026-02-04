@@ -25,13 +25,33 @@ namespace food_calculation
         private Dish currDish;
         private DishManager dishManager;
         public List<Ingredient> newIngredients = new List<Ingredient>();
+        double newFontSize = 20;
         public IngredientPage(Dish currDish, DishManager dishManager)
         {
             InitializeComponent();
             this.currDish = currDish;
             this.dishManager = dishManager;
+            this.SizeChanged += SizeChangedIngredientPage;
 
+        }
 
+        private void SizeChangedIngredientPage(object sender, SizeChangedEventArgs e)
+        {
+            newFontSize = this.ActualWidth * 0.05;
+
+            Title.FontSize = newFontSize;
+            backButton.FontSize = newFontSize * 0.5;
+            AmountPeople.FontSize = newFontSize * 0.4;
+            
+            foreach (var item in IngredientsPanel.Children.OfType<TextBlock>())
+            {
+                item.FontSize = newFontSize * 0.35;
+            }
+
+            foreach (var item in IngredientAmountPanel.Children.OfType<TextBlock>())
+            {
+                item.FontSize = newFontSize * 0.35;
+            }
         }
 
         private void BackButton(object sender, RoutedEventArgs e)
@@ -69,7 +89,8 @@ namespace food_calculation
                 TextBlock ingredientText = new TextBlock
                 {
                     Text = text,
-                    FontSize = 16,
+                    FontSize = newFontSize * 0.35,
+                    Foreground = Brushes.White,
                     Margin = new Thickness(5)
                 };
                 IngredientsPanel.Children.Add(ingredientText);
@@ -104,7 +125,8 @@ namespace food_calculation
                 IngredientAmountPanel.Children.Add(new TextBlock
                 {
                     Text = newAmountString,
-                    FontSize = 16,
+                    FontSize = newFontSize * 0.35,
+                    Foreground = Brushes.White,
                     Margin = new Thickness(5)
                 });
             }
