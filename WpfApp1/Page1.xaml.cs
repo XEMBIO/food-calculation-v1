@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -75,6 +76,20 @@ namespace food_calculation
 
         }
 
+        private void Filter_Click(object sender, RoutedEventArgs e)
+        {
+            Window parentWindow = Window.GetWindow(this);
+
+            if (parentWindow != null)
+            {
+                var mainFrame = parentWindow.FindName("MainFrame") as Frame;
+                if (mainFrame != null)
+                {
+                    
+                }
+            }
+        }
+
         private void DishClicked(object sender, RoutedEventArgs e)
         {
             Button clickedButton = sender as Button;
@@ -138,7 +153,55 @@ namespace food_calculation
             borderFactory.AppendChild(contentPresenterFactory);
             template.VisualTree = borderFactory;
 
+            var eventEnterTrigger = new EventTrigger
+            {
+                RoutedEvent = UIElement.MouseEnterEvent
+            };
 
+            var enterStoryboard = new Storyboard();
+
+            var enterSizeAnim = new DoubleAnimation
+            {
+                By = 2,
+                Duration = TimeSpan.FromSeconds(0.2),
+                FillBehavior = FillBehavior.HoldEnd
+            };
+
+            Storyboard.SetTarget(enterSizeAnim, btn);
+            Storyboard.SetTargetProperty(enterSizeAnim, new PropertyPath(Button.FontSizeProperty));
+
+            enterStoryboard.Children.Add(enterSizeAnim);
+
+            eventEnterTrigger.Actions.Add(new BeginStoryboard
+            {
+                Storyboard = enterStoryboard
+            });
+
+            var eventLeaveTrigger = new EventTrigger
+            {
+                RoutedEvent = UIElement.MouseLeaveEvent
+            };
+
+            var leaveStoryboard = new Storyboard();
+
+            var leaveSizeAnim = new DoubleAnimation
+            {
+                By = -2,
+                Duration = TimeSpan.FromSeconds(0.2),
+                FillBehavior = FillBehavior.Stop
+            };
+
+            Storyboard.SetTarget(leaveSizeAnim, btn);
+            Storyboard.SetTargetProperty(leaveSizeAnim, new PropertyPath(Button.FontSizeProperty));
+
+            leaveStoryboard.Children.Add(leaveSizeAnim);
+
+            eventLeaveTrigger.Actions.Add(new BeginStoryboard
+            {
+                Storyboard = leaveStoryboard
+            });
+            btn.Triggers.Add(eventLeaveTrigger);
+            btn.Triggers.Add(eventEnterTrigger);
             btn.Template = template;
             btn.Click += DishClicked;
 

@@ -7,8 +7,48 @@
       "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\page1.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\myingredients.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\myingredients.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\page1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\page1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\myingredients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\myingredients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\ingredientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\ingredientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\ingredientpage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\ingredientpage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\ingredientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\ingredientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\adddishpage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\adddishpage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\adddishpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\adddishpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\adddishpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\adddishpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\page1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,36 +59,19 @@
       "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\ingredientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\ingredientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bauer\\AppData\\Local\\Temp\\.vsdbgsrc\\02b4d204ea4f1d18c60baf1df5ee6856d409aad500a041af4ae5883a18ac20ab\\Storyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\ingredientpage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\ingredientpage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\dishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\dishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\ingredientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\ingredientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\myingredients.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\myingredients.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\myingredients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\myingredients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\adddishpage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\adddishpage.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\adddishpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\adddishpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\adddishpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\adddishpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,26 +80,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\repeatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\repeatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\dishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\dishmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\myingredients.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\myingredients.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|solutionrelative:wpfapp1\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43379FAB-DBCA-43AA-A1BF-870BDAA84C6C}|WpfApp1\\food_calculation.csproj|c:\\users\\bauer\\source\\repos\\food-calculation-v2\\wpfapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -89,23 +92,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 215,
-          "SelectedChildIndex": 14,
+          "DockedWidth": 236,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Page1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml.cs",
-              "RelativeDocumentMoniker": "WpfApp1\\Page1.xaml.cs",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml.cs",
-              "RelativeToolTip": "WpfApp1\\Page1.xaml.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAowEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T07:13:55.737Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -120,7 +109,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "MyIngredients.xaml",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\MyIngredients.xaml",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml",
+              "RelativeToolTip": "WpfApp1\\MyIngredients.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-16T07:24:39.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IngredientPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\IngredientPage.xaml",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml",
+              "RelativeToolTip": "WpfApp1\\IngredientPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-16T11:43:45.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Page1.xaml",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Page1.xaml",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml",
+              "RelativeToolTip": "WpfApp1\\Page1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-16T07:02:11.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IngredientPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\IngredientPage.xaml.cs",
@@ -133,30 +158,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AddDishPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\AddDishPage.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\AddDishPage.xaml.cs",
               "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\AddDishPage.xaml.cs",
               "RelativeToolTip": "WpfApp1\\AddDishPage.xaml.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwC4AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAvwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T07:39:37.741Z"
+              "WhenOpened": "2026-02-03T07:39:37.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
+              "Title": "Page1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml.cs",
+              "RelativeDocumentMoniker": "WpfApp1\\Page1.xaml.cs",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml.cs",
+              "RelativeToolTip": "WpfApp1\\Page1.xaml.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAswMQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T07:13:55.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AddDishPage.xaml",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\AddDishPage.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\AddDishPage.xaml",
               "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\AddDishPage.xaml",
               "RelativeToolTip": "WpfApp1\\AddDishPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-03T07:11:20.839Z"
+              "WhenOpened": "2026-02-03T07:11:20.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "MyIngredients.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\MyIngredients.xaml.cs",
@@ -169,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml.cs",
@@ -181,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
@@ -194,65 +234,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "MyIngredients.xaml",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\MyIngredients.xaml",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml",
-              "RelativeToolTip": "WpfApp1\\MyIngredients.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-16T07:24:39.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Ingredient.cs",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Ingredient.cs",
               "RelativeDocumentMoniker": "WpfApp1\\Ingredient.cs",
               "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Ingredient.cs",
               "RelativeToolTip": "WpfApp1\\Ingredient.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA7wA0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T07:47:50.458Z"
+              "WhenOpened": "2026-01-16T07:47:50.458Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "Dish.cs",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Dish.cs",
               "RelativeDocumentMoniker": "WpfApp1\\Dish.cs",
               "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Dish.cs",
               "RelativeToolTip": "WpfApp1\\Dish.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBkAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T07:47:04.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IngredientPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\IngredientPage.xaml",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml",
-              "RelativeToolTip": "WpfApp1\\IngredientPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-16T11:43:45.273Z",
+              "WhenOpened": "2026-01-16T07:47:04.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Page1.xaml",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\Page1.xaml",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml",
-              "RelativeToolTip": "WpfApp1\\Page1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-16T07:02:11.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\App.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\App.xaml",
@@ -265,24 +272,64 @@
           ]
         },
         {
-          "DockedWidth": 185,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 164,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddDishPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\AddDishPage.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\AddDishPage.xaml",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\AddDishPage.xaml",
-              "RelativeToolTip": "WpfApp1\\AddDishPage.xaml",
-              "ViewState": "AgIAALEAAAAAAAAAAAAiwLgAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MyIngredients.xaml",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\MyIngredients.xaml",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml",
+              "RelativeToolTip": "WpfApp1\\MyIngredients.xaml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwFUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-03T07:11:25.09Z"
+              "WhenOpened": "2026-01-16T07:24:53.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
+              "Title": "IngredientPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\IngredientPage.xaml",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml",
+              "RelativeToolTip": "WpfApp1\\IngredientPage.xaml",
+              "ViewState": "AgIAAIoAAAAAAAAAAIAywJQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-16T11:44:02.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Page1.xaml",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\Page1.xaml",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml",
+              "RelativeToolTip": "WpfApp1\\Page1.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-16T07:02:16.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MainWindow.xaml",
+              "RelativeToolTip": "WpfApp1\\MainWindow.xaml",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAowGoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-15T08:10:05.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "RepeatManager.cs",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\RepeatManager.cs",
               "RelativeDocumentMoniker": "WpfApp1\\RepeatManager.cs",
@@ -294,64 +341,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Storyboard.cs",
+              "DocumentMoniker": "C:\\Users\\Bauer\\AppData\\Local\\Temp\\.vsdbgsrc\\02b4d204ea4f1d18c60baf1df5ee6856d409aad500a041af4ae5883a18ac20ab\\Storyboard.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\02b4d204ea4f1d18c60baf1df5ee6856d409aad500a041af4ae5883a18ac20ab\\Storyboard.cs",
+              "ToolTip": "C:\\Users\\Bauer\\AppData\\Local\\Temp\\.vsdbgsrc\\02b4d204ea4f1d18c60baf1df5ee6856d409aad500a041af4ae5883a18ac20ab\\Storyboard.cs [Schreibgesch\u00FCtzt]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\02b4d204ea4f1d18c60baf1df5ee6856d409aad500a041af4ae5883a18ac20ab\\Storyboard.cs [Schreibgesch\u00FCtzt]",
+              "ViewState": "AgIAAIkCAAAAAAAAAAAkwJYCAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T13:23:52.005Z",
+              "EditorCaption": " [Schreibgesch\u00FCtzt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddDishPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\AddDishPage.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\AddDishPage.xaml",
+              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\AddDishPage.xaml",
+              "RelativeToolTip": "WpfApp1\\AddDishPage.xaml",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAUwP8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-03T07:11:25.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MainWindow.xaml",
-              "RelativeToolTip": "WpfApp1\\MainWindow.xaml",
-              "ViewState": "AgIAADIAAAAAAAAAAAAYwEsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T08:10:05.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MyIngredients.xaml",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\MyIngredients.xaml",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\MyIngredients.xaml",
-              "RelativeToolTip": "WpfApp1\\MyIngredients.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-16T07:24:53.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "DishManager.cs",
               "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\DishManager.cs",
               "RelativeDocumentMoniker": "WpfApp1\\DishManager.cs",
               "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\DishManager.cs",
               "RelativeToolTip": "WpfApp1\\DishManager.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAswE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T09:04:02.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Page1.xaml",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\Page1.xaml",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\Page1.xaml",
-              "RelativeToolTip": "WpfApp1\\Page1.xaml",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAcwH0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-16T07:02:16.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IngredientPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml",
-              "RelativeDocumentMoniker": "WpfApp1\\IngredientPage.xaml",
-              "ToolTip": "C:\\Users\\Bauer\\source\\repos\\food-calculation-v2\\WpfApp1\\IngredientPage.xaml",
-              "RelativeToolTip": "WpfApp1\\IngredientPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-16T11:44:02.195Z",
+              "WhenOpened": "2026-01-16T09:04:02.464Z",
               "EditorCaption": ""
             }
           ]

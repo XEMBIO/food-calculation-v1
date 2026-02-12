@@ -57,7 +57,42 @@
             FontSize="20"
             Click="BackButton"
             x:Name="backButton">
-
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="backButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="15"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="backButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="backButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="20"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="backButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
 
                 <ControlTemplate TargetType="Button">
@@ -161,7 +196,42 @@
             VerticalContentAlignment="Top"
             Click="IngredientButton"
             x:Name="AddButton">
-
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="AddButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="0,2"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="AddButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="AddButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="0,7"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="AddButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="#a1000000" CornerRadius="20">
@@ -185,7 +255,42 @@
             FontSize="20"
             Click="AcceptButton"
             x:Name="acceptButton">
-
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="acceptButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="0"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="acceptButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="acceptButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="5"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="acceptButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="#a1000000" CornerRadius="25">
@@ -201,6 +306,44 @@
             </Button.Template>
 
         </Button>
+
+        <CheckBox
+            Grid.Row="1"
+            Margin="10,0,0,0"
+            Grid.Column="3"
+            Content="Vegan"
+            VerticalAlignment="Center"
+            Foreground="White"
+            Click="vegan_Click"
+            x:Name="vegan"
+            >
+
+            <CheckBox.LayoutTransform>
+
+                <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+
+            </CheckBox.LayoutTransform>
+            
+        </CheckBox>
+
+        <CheckBox
+            Grid.Row="2"
+            Grid.Column="3"
+            Margin="10,0,0,0"
+            Content="Vegetarisch"
+            VerticalAlignment="Center"
+            Foreground="White"
+            Click="vegetarisch_Click"
+            x:Name="vegetarisch"
+            >
+
+            <CheckBox.LayoutTransform>
+
+                <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+
+            </CheckBox.LayoutTransform>
+
+        </CheckBox>
 
     </Grid>
 </Page>

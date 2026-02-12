@@ -52,6 +52,42 @@
             Click="Button_Click"
             FontSize="20"
             x:Name="BackButton">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="BackButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="15"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="BackButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="BackButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="20"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="BackButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border

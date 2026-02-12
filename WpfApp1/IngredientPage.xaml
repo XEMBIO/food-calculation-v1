@@ -52,7 +52,42 @@
             Click="BackButton"
             Foreground="White"
             x:Name="backButton">
-
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="backButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="15"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="backButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="backButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="20"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="backButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border
@@ -99,7 +134,52 @@
             HorizontalAlignment="Left"
             Click="RefreshIngredients"
             x:Name="AddButton">
-
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                            Storyboard.TargetName="AddButton"
+                            Storyboard.TargetProperty="Margin"
+                            To="0,58,-2,-2"
+                            Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                            Storyboard.TargetName="AddButton"
+                            Storyboard.TargetProperty="Width"
+                            To="65"
+                            Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                            Storyboard.TargetName="AddButton"
+                            Storyboard.TargetProperty="FontSize"
+                            By="2"
+                            Duration="0:0:0.2"
+                            FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                            Storyboard.TargetName="AddButton"
+                            Storyboard.TargetProperty="Margin"
+                            To="2,60,0,0"
+                            Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                            Storyboard.TargetName="AddButton"
+                            Storyboard.TargetProperty="Width"
+                            To="60"
+                            Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                            Storyboard.TargetName="AddButton"
+                            Storyboard.TargetProperty="FontSize"
+                            By="-2"
+                            Duration="0:0:0.2"
+                            FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
 
                 <ControlTemplate TargetType="Button">
@@ -168,8 +248,44 @@
             Content="Bestätigen"
             FontSize="20"
             Click="DoneButton"
-            Foreground="White">
-
+            Foreground="White"
+            x:Name="doneButton">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="doneButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="15"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="doneButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="doneButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="20"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="doneButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
 
                 <ControlTemplate TargetType="Button">

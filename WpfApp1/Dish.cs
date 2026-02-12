@@ -23,7 +23,7 @@ namespace food_calculation
             set => ingredients = value;
         }
 
-        public Dish(string name, List<Ingredient> ingredients)
+        public Dish(string name, List<Ingredient> ingredients, bool vegan, bool vegetarisch)
         {
             this.name = name;
             this.ingredients = ingredients;

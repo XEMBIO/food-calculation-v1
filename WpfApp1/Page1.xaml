@@ -10,12 +10,15 @@
 
     <Grid>
 
+        
+
         <Grid.Background>
 
             <LinearGradientBrush>
 
-                <GradientStop Color="#006ba9" Offset="0"/>
-                <GradientStop Color="#001a4a" Offset="1"/>
+
+                <GradientStop Color="#006ba9" Offset="1"/>
+                <GradientStop Color="#001a4a" Offset="0"/>
 
             </LinearGradientBrush>
 
@@ -34,6 +37,8 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        
+
         <Label
             Grid.Row="0"
             Grid.Column="1"
@@ -45,7 +50,8 @@
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
             FontWeight="Bold"
-            x:Name="Title"/>
+            x:Name="Title"
+            />
 
         <Button
             Grid.Row="0"
@@ -57,6 +63,42 @@
             Foreground="White"
             Click="Button_Click"
             x:Name="BackButton">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="BackButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="15"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="BackButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="BackButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="20"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="BackButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border
@@ -81,6 +123,42 @@
             Click="RefreshMenu"
             Foreground="White"
             x:Name="RefreshButton">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="RefreshButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="15"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="RefreshButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="RefreshButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="20"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="RefreshButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border
@@ -103,6 +181,42 @@
             Foreground="White"
             Background="#a1000000"
             x:Name="Add_Button">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="Add_Button"
+                                Storyboard.TargetProperty="Margin"
+                                To="15"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="Add_Button"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="Add_Button"
+                                Storyboard.TargetProperty="Margin"
+                                To="20"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="Add_Button"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border
@@ -116,6 +230,7 @@
             </Button.Template>
         </Button>
 
+        
 
         <Button
             Grid.Row="0"
@@ -124,8 +239,45 @@
             Content="Filter"
             Foreground="White"
             Background="#a1000000"
-            FontSize="20">
-
+            FontSize="20"
+            Click="Filter_Click"
+            x:Name="FilterButton">
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="FilterButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="15"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="FilterButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="2"
+                                Duration="0:0:0.2"
+                                FillBehavior="HoldEnd"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="FilterButton"
+                                Storyboard.TargetProperty="Margin"
+                                To="20"
+                                Duration="0:0:0.2"/>
+                            <DoubleAnimation
+                                Storyboard.TargetName="FilterButton"
+                                Storyboard.TargetProperty="FontSize"
+                                By="-2"
+                                Duration="0:0:0.2"
+                                FillBehavior="Stop"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
             <Button.Template>
 
                 <ControlTemplate TargetType="Button">
@@ -152,20 +304,22 @@
             Margin="25"
             Background="#a1000000"
             CornerRadius="30">
-        <ScrollViewer 
+            <ScrollViewer 
             VerticalScrollBarVisibility="Auto"
             Grid.Row="1"
             Grid.ColumnSpan="4"
             Background="Transparent"
             x:Name="GerichtMenu">
 
-            <StackPanel x:Name="GerichtScroll">
+                <StackPanel x:Name="GerichtScroll">
 
-            </StackPanel>
+                </StackPanel>
 
-        </ScrollViewer>
+            </ScrollViewer>
 
         </Border>
+
+        
 
     </Grid>
 </Page>

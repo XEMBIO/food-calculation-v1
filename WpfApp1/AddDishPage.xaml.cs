@@ -82,9 +82,30 @@ namespace food_calculation
         private void AcceptButton(object sender, RoutedEventArgs e)
         {
             string name = DishNameTextBox?.Text?.Trim();
+            bool isVegan;
+            bool isVegetarisch;
+
+            if (vegan.IsChecked == true)
+            {
+                isVegan = true;
+            }
+            else
+            {
+                isVegan = false;
+            }
+
+            if (vegetarisch.IsChecked == true)
+            {
+                isVegetarisch = true; 
+            }
+            else
+            {
+                isVegetarisch = false; 
+            }
+
             if (ingredients != null)
             {
-                dishManager.AddDish(ingredients, name);
+                dishManager.AddDish(ingredients, name, isVegan, isVegetarisch);
             }
             Window parentWindow = Window.GetWindow(this);
             var mainFrame = parentWindow.FindName("MainFrame") as Frame;
@@ -124,6 +145,22 @@ namespace food_calculation
                     string text = $"{ingredient.Name}: {ingredient.Amount} / Person";
                     IngredientListPanel.Children.Add(new TextBlock { Text = text, Foreground = Brushes.White, FontSize = newFontSize * 0.4 });
                 }
+            }
+        }
+
+        private void vegetarisch_Click(object sender, RoutedEventArgs e)
+        {
+            if (vegetarisch.IsChecked == true)
+            {
+                vegan.IsChecked = false;
+            }
+        }
+
+        private void vegan_Click(object sender, RoutedEventArgs e)
+        {
+            if (vegan.IsChecked == true)
+            {
+                vegetarisch.IsChecked = false;
             }
         }
     }

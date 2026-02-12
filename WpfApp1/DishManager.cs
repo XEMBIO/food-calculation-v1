@@ -14,6 +14,7 @@ namespace food_calculation
     {
 
         private List<Dish> dishes = new List<Dish>();
+        private List<Dish> filteredDishes = new List<Dish>();
         public List<Ingredient> addedIngredients = new List<Ingredient>();
 
 
@@ -22,6 +23,12 @@ namespace food_calculation
         {
             get => dishes;
             set => dishes = value;
+        }
+
+        public List<Dish> FilteredDishes
+        {
+            get => filteredDishes;
+            set => filteredDishes = value;
         }
 
         public DishManager()
@@ -33,7 +40,7 @@ namespace food_calculation
                 new Ingredient("Pasta", "100 g"),
                 new Ingredient("Tomato Sauce", "50 ml"),
                 new Ingredient("Cheese", "20 g")
-            }));
+            }, false, false));
 
             dishes.Add(new Dish("Salad", new List<Ingredient>
             {
@@ -41,7 +48,7 @@ namespace food_calculation
                 new Ingredient("Tomato", "30 g"),
                 new Ingredient("Cucumber", "30 g"),
                 new Ingredient("Dressing", "20 ml")
-            }));
+            }, false, false));
 
             dishes.Add(new Dish("Sandwich", new List<Ingredient>
             {
@@ -50,7 +57,7 @@ namespace food_calculation
                 new Ingredient("Cheese", "20 g"),
                 new Ingredient("Lettuce", "10 g"),
                 new Ingredient("Tomato", "10 g")
-            }));
+            }, false, false));
         }
 
         public void RefreshDishes(Page1 gerichtSeite)
@@ -64,11 +71,19 @@ namespace food_calculation
             }
         }
 
-        
-
-        public void AddDish(List<Ingredient> ingredients, string name)
+        public void ApplyFilter(List<Ingredient> filteredIngredients, bool _vegan, bool _vegetarisch)
         {
-            Dishes.Add(new Dish(name, ingredients));
+            filteredDishes.Clear();
+            foreach (var dish in Dishes)
+            {
+
+
+            }
+        }
+
+        public void AddDish(List<Ingredient> ingredients, string name, bool vegan, bool vegetarisch)
+        {
+            Dishes.Add(new Dish(name, ingredients, vegan, vegetarisch));
         }
 
 
